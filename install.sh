@@ -2,7 +2,7 @@
 #
 # install_all.sh
 
-REPO_URL="https://github.com/YoubaDJAOUTI/install-docker.git"
+REPO_URL="https://github.com/YoubaDJAOUTI/docker_git_install.git"
 
 SCRIPT_1="net_monitor.py"
 SCRIPT_2="sync_transfer.py"
