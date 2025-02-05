@@ -5,8 +5,8 @@ import pty
 import select
 import subprocess
 
-SERVER_IP = "192.168.213.139"  # Adresse du serveur
-SERVER_PORT = 5551
+SERVER_IP = "192.168.1.84"  # Adresse du serveur
+SERVER_PORT = 5553
 current_directory = "/"  # Variable globale pour conserver le répertoire courant
 
 def connect_to_server():
