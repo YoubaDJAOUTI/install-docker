@@ -1,4 +1,3 @@
-cat keylogger_target.py 
 import evdev
 import threading
 import requests
